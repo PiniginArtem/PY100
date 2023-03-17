@@ -1,3 +1,3 @@
 foo = "Hello, World!"
 
-print(Foo)  # TODO исправить название переменной
+print(foo)  # TODO исправить название переменной
