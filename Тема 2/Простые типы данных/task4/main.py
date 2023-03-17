@@ -1,7 +1,7 @@
 # переменные лучше, чем "магические числа"
-length = ...  # TODO Задать длину
-width = ...  # TODO Задать ширину
+length = 90  # TODO Задать длину
+width = 50  # TODO Задать ширину
 
-perimeter = ...  # TODO посчитать периметр прямоугольника
+perimeter = (length + width) * 2 # TODO посчитать периметр прямоугольника
 
 print(perimeter)
