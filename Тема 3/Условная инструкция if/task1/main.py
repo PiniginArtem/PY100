@@ -1,4 +1,4 @@
-condition = ...  # TODO поочередно подставьте значения True и False
+condition = False  # TODO поочередно подставьте значения True и False
 if condition:
     print("Условие истинно")
 else:

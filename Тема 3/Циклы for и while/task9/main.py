@@ -26,4 +26,5 @@ surname_list = [  # список фамилий Санкт-Петербурга
     "Соловьёв"
 ]
 
-# TODO распечатать фамилии и их номера
+for pos_popular, last_name in enumerate(surname_list, start=1):
+    print(pos_popular, last_name)
