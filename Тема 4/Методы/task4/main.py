@@ -1,6 +1,10 @@
 # TODO реализовать функцию
-def insert():
-    ...
+def insert(list_, value, index=0):
+    list_ = list_ + [1]
+    for i in range(len(list_) - 1, index, -1):
+        list_[i] = list_[i - 1]
+    list_[index] = value
+    return list_
 
 
 print(insert([1], value=0))  # [0, 1]
