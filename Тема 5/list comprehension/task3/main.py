@@ -22,4 +22,5 @@ students_list = [
 ]
 
 
-# TODO  распечатать список кортежей
+list_ = [tuple(dict_.values()) for dict_ in students_list]
+print(list_)

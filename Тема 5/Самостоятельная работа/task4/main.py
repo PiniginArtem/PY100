@@ -1,5 +1,5 @@
-from random import choice
-
+from random import choices
+from collections import Counter
 
 EAGLE = "Орел"
 TAILS = "Решка"
@@ -9,8 +9,12 @@ counts = [10, 100, 1000, 100000, 1000000]  # различное количест
 list_freq = []  # список, где будем хранить отношение количества выпавших орлов к решке
 
 for count in counts:
-    ...  # TODO подсчитать количество выпаданий орлов и решек
+    list_value = choices(coin, k=count)
+    list_count = Counter(list_value)
 
-    # TODO разделить минимальное число среди орлов и решек на максимальное число и сохранить результат
+    if list_count[EAGLE] > list_count[TAILS]:
+        list_freq.append(list_count[TAILS] / list_count[EAGLE])
+    else:
+        list_freq.append(list_count[EAGLE] / list_count[TAILS])
 
 print(list_freq)

@@ -8,7 +8,7 @@ def list_over_for_loop(n):
 
 
 def over_list_comprehension(n):
-    return []  # TODO записать list comprehension
+    return [i ** 2 for i in range(n) if i % 2 == 0]
 
 
 num = 10
