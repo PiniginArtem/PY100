@@ -1,5 +1,10 @@
+from random import sample
 def get_unique_list_numbers() -> list[int]:
-    ...  # TODO написать функцию для получения списка уникальных целых чисел
+    """
+    функция, которая возвращает список, заполненный случайными уникальными целыми числами
+    :return: list[int]
+    """
+    return sample(range(-10, 11), k=15)
 
 
 list_unique_numbers = get_unique_list_numbers()

@@ -1,5 +1,7 @@
-def task(num):  # TODO добавить аннотацию типов
-    ...  # TODO найти сумму цифр числа и понять двузначная ли она
+def task(num: int) -> bool:
+    if sum([int(digit) for digit in str(num).replace("-", "")]) < 10:
+        return False
+    return True
 
 
 print(task(12))
